@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>Feline Friend Finder Survey</title>
+  <style>
+    img {
+      float: left;
+      padding-right: 10px;
+    }
+  </style>
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <img src="assets/pic1.png" height="125px" width="135px" alt="pic1">
+      <h1>Compurrtibility Quiz</h1>
+      <h3>Don't hiss &mdash; find bliss with a new bestie!</h3>
+
+    </div>
+
+    <h3>
+      <strong>About You</strong>
+    </h3>
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="form-control" required>
+
+    <h4>Add your purrty face (Required)</h4>
+    <input type="text" id="photo" class="form-control mb-3" required>
+
+    <hr>
+
+    <h3>
+      <strong>Question 1</strong>
+    </h3>
+    <h4>Catnip. Am I right?</h4>
+    <select class="chosen-select" id="q1">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 2</strong>
+    </h3>
+    <h4>Dogs BELONG in the doghouse.</h4>
+    <select class="chosen-select" id="q2">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 3</strong>
+    </h3>
+    <h4>I never met a pair of black pants I didn't like.</h4>
+    <select class="chosen-select" id="q3">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 4</strong>
+    </h3>
+    <h4>True friends lick your unreachable bits.</h4>
+    <select class="chosen-select" id="q4">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 5</strong>
+    </h3>
+    <h4>Humans are merely here to serve us.</h4>
+    <select class="chosen-select" id="q5">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 6</strong>
+    </h3>
+    <h4>Dry food? Meh.</h4>
+    <select class="chosen-select" id="q6">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 7</strong>
+    </h3>
+    <h4>Best seat in the house? Folded laundry in basket.</h4>
+    <select class="chosen-select" id="q7">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 8</strong>
+    </h3>
+    <h4>Learning new ways to destroy furniture? I'm in!</h4>
+    <select class="chosen-select" id="q8">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 9</strong>
+    </h3>
+    <h4>If I had two dead mice I'd give you one.</h4>
+    <select class="chosen-select" id="q9">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3>
+      <strong>Question 10</strong>
+    </h3>
+    <h4>The Pink Panther is my hero.</h4>
+    <select class="chosen-select" id="q10">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p>Feline Friend Finder is the cat's meow!
+        </p>
+      </div>
+    </footer>
+    <!-- Submit Button -->
+    <button type="submit" data-target="results-modal" class="btn btn-primary btn-lg btn-block mt-3" id="submit">
+      Submit</button>
+
+
+  </div>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">
+            <strong>Purrrfect Match</strong>
+          </h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="http://i0.kym-cdn.com/photos/images/original/000/999/374/08a.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  // Chosen CSS
+  var config = {
+      ".chosen-select": {},
+      ".chosen-select-deselect": {
+        allow_single_deselect: true
+      },
+      ".chosen-select-no-single": {
+        disable_search_threshold: 10
+      },
+      ".chosen-select-no-results": {
+        no_results_text: "Oops, nothing found!"
+      },
+      ".chosen-select-width": {
+        width: "95%"
+      }
+    };
+
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+
+    // Capture form inputs
+    // $(document).ready(function () {
+      $("#submit").on("click", function(event) {
+        event.preventDefault();
+
+        // Form validation
+        function validateForm() {
+          var isValid = true;
+          $(".form-control").each(function () {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+
+          $(".chosen-select").each(function(){
+            if($(this).val() === ""){
+              isValid = false;
+            }
+          });
+          return isValid;
+        }
+
+        // If all required fields are filled
+        if (validateForm()) {
+          // Create an object for user data -- not data that already exists
+          var userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+              $("#q1").val(),
+              $("#q2").val(),
+              $("#q3").val(),
+              $("#q4").val(),
+              $("#q5").val(),
+              $("#q6").val(),
+              $("#q7").val(),
+              $("#q8").val(),
+              $("#q9").val(),
+              $("#q10").val()
+            ]
+          };
+          //grab the window object
+          // var myURL = window.location.origin;
+
+          // AJAX post the data to the friends API.
+          $.post("/api/friends", userData, function (data) {
+            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+  
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+
+        });
+      } else {
+        alert("Please complete your form before submitting!");
+      }
+
+    });
+  </script>
+
+</body>
+
+</html>
